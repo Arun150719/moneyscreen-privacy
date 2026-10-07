@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoneyScreen Privacy Policy</title>
+
+<style>
+  :root {
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --ink: #14161f;
+    --ink-2: #565b6e;
+    --accent: #2456d6;
+    --rule: #e1e4ee;
+    --ok: #1d8a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0b0b0f;
+      --surface: #15161d;
+      --ink: #f4f4f7;
+      --ink-2: #a0a4b4;
+      --accent: #6b95ff;
+      --rule: #262835;
+      --ok: #4fc97f;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0b0b0f;
+    --surface: #15161d;
+    --ink: #f4f4f7;
+    --ink-2: #a0a4b4;
+    --accent: #6b95ff;
+    --rule: #262835;
+    --ok: #4fc97f;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    padding-block: 32px 64px;
+    padding-inline: 20px;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 {
+    font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
+    font-size: 2rem;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .meta { color: var(--ink-2); font-size: 0.9rem; margin: 0 0 28px; }
+  .summary {
+    display: grid;
+    gap: 10px;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    margin: 0 0 32px;
+  }
+  .summary p { margin: 0; }
+  .summary strong { color: var(--ok); }
+  h2 {
+    font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: -0.01em;
+    margin: 32px 0 8px;
+  }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .contact {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-2);
+    font-size: 0.95rem;
+  }
+  code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.92em; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
+</head>
+<body>
+<main>
+  <h1>MoneyScreen Privacy Policy</h1>
+  <p class="meta">Applies to the Android app "MoneyScreen - Money Wallpaper" (package <code>com.arnasapps.moneyscreen</code>) by Arnas Apps. Effective 26 September 2026.</p>
+
+  <section class="summary" aria-label="Summary">
+    <p><strong>Nothing leaves your phone.</strong> MoneyScreen has no server, no account and no internet permission.</p>
+    <p><strong>We collect nothing.</strong> The developer never receives your numbers, your pictures or any usage data.</p>
+    <p><strong>You type everything.</strong> The app does not read messages, notifications, bank apps or any other app.</p>
+  </section>
+
+  <h2>What the app stores, and where</h2>
+  <p>MoneyScreen is a wallpaper app. You type the figures you want to see (account balances, this month's credits and debits, EMIs, upcoming payments, expenses and free-form notes) and the app draws them on your lock screen and home screen.</p>
+  <ul>
+    <li>Everything you type is saved in a database inside the app's private storage on your phone. No other app can read it.</li>
+    <li>A copy of the current wallpaper content is kept in the app's private preferences so the wallpaper service and the home-screen widgets can draw it.</li>
+    <li>If you choose a background picture, the app copies that one picture into its private storage. On Android 12 and older it can copy your current wallpaper for this; on newer versions you pick a picture through the Android photo picker, which gives the app access to that picture only.</li>
+    <li>If you set an app lock PIN, only a salted hash of the PIN is stored, never the PIN itself. Biometric unlock is handled by Android; the app never sees your fingerprint or face data.</li>
+  </ul>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li>It does not connect to the internet. The app declares no internet permission, so it cannot send or receive data.</li>
+    <li>It does not read SMS, notifications, contacts, location, or other apps.</li>
+    <li>It does not link to banks, wallets or payment services, and it never asks for credentials.</li>
+    <li>It contains no analytics, no crash reporting service, no advertising and no third-party SDK that collects data.</li>
+    <li>It gives no financial advice. It only displays what you typed.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Biometrics (USE_BIOMETRIC)</strong>: optional, only if you turn on fingerprint or face unlock for the app lock.</li>
+    <li><strong>Live wallpaper service</strong>: so Android can show MoneyScreen as your wallpaper.</li>
+    <li><strong>Quick Settings tile</strong>: an optional tile to show or hide the numbers from the lock screen.</li>
+    <li><strong>Home-screen widget</strong>: optional widgets that show the same content.</li>
+  </ul>
+
+  <h2>Backups you create</h2>
+  <p>Settings offers "Backup &amp; restore". Export writes one JSON file containing your typed numbers and hands it to the Android share sheet. Where that file goes (your Files app, a cloud drive, an email) is your choice and outside this app. The app never uploads it by itself.</p>
+
+  <h2>Deleting your data</h2>
+  <ul>
+    <li>Settings &rarr; "Clear all numbers" removes every figure you typed.</li>
+    <li>Settings &rarr; Background &rarr; "Remove" deletes the copied picture.</li>
+    <li>Uninstalling the app removes everything it stored.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children and collects no personal information from anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be published at the same address with a new effective date. The app's behaviour described above (no collection, no transmission) is a design principle, not a setting.</p>
+
+  <p class="contact">Questions about this policy: <a href="mailto:arnasapp1@gmail.com">arnasapp1@gmail.com</a></p>
+  <p class="contact">MoneyScreen &middot; Arnas Apps &middot; arnasapp1@gmail.com</p>
+</main>
+
+</body>
+</html>
